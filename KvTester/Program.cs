@@ -9,8 +9,9 @@ Console.WriteLine($"Key Vault URI: {kvUri}");
 
 var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential());
 
+Console.WriteLine("Secrets:");
 foreach (var prop in client.GetPropertiesOfSecrets())
 {
     var secret = client.GetSecret(prop.Name);
-    Console.WriteLine($"{prop.Name}: {secret.Value.Value}");
+    Console.WriteLine($"\t{prop.Name}: {secret.Value.Id}");
 }
