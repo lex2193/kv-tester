@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  kvtester:
+    image: ${DOCKER_REGISTRY-}kvtester
+    build:
+      context: .
+      dockerfile: KvTester/Dockerfile
+    environment:
+      - KEY_VAULT_NAME=test

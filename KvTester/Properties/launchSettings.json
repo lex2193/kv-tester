@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "KvTester": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
