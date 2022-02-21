@@ -12,5 +12,5 @@ var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential());
 foreach (var prop in client.GetPropertiesOfSecrets())
 {
     var secret = client.GetSecret(prop.Name);
-    Console.WriteLine($"{prop.Name}: {secret.Value}");
+    Console.WriteLine($"{prop.Name}: {secret.Value.Value}");
 }
