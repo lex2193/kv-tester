@@ -1,7 +1,7 @@
 # kv-tester
-A small pod to test your Azure Key Vault access with aad-pod-identity *(do not forget to replace XXX)*
+A small dotnet core pod to test your Azure Key Vault access with aad-pod-identity *(do not forget to replace XXX)*
 
-```
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
